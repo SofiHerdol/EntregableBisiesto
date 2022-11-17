@@ -8,7 +8,7 @@ def año_bisiesto(año):
         return invalido
     else:
         año = int(año)
-        if año % 4 == 0:
+        if año % 4 == 0 and (año % 400 == 0 or año % 100 != 0):
             return bisiesto
         else:
             return bisiestont    

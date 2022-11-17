@@ -1,0 +1,24 @@
+#ENTREGABLE AÑO BISIESTO
+
+def año_bisiesto(año):
+    bisiesto = "El año ingresado es bisiesto."
+    bisiestont = "El año ingresado no es bisiesto."
+    invalido = "El dato ingresado es inválido, por favor, ingrese un número."
+    if año.isdigit() == False:
+        return invalido
+    else:
+        año = int(año)
+        if año % 4 == 0:
+            return bisiesto
+        else:
+            return bisiestont    
+
+print(año_bisiesto(input("Por favor, ingrese un año para comprobar si es bisiesto o no: ")))
+
+# print(año_bisiesto("2019"))
+# print(año_bisiesto("2020"))
+# print(año_bisiesto("2021"))
+# print(año_bisiesto("2022"))
+# print(año_bisiesto("2023"))
+# print(año_bisiesto("2024"))
+# print(año_bisiesto("2025"))
